@@ -1,0 +1,29 @@
+
+<div class="spinner" ng-show="loading">
+    <img src="https://www.nasa.gov/multimedia/videogallery/ajax-loader.gif" />
+</div>
+<div class="card-deck">
+
+
+    <div ng-repeat="match in matches.list">
+
+        <div class="card" style="width: 14rem;">
+			<img ng-src="/images/{{match.team1}}.png" class="card-img-top" alt={{movie.name}} title={{movie.name}}>
+            <img ng-src="/images/{{match.team2}}.png" class="card-img-top" alt={{movie.name}} title={{movie.name}}>
+			<div class="card-body">
+			  <h5 class="card-title">{{match.date}} </h5>
+              <a href={{match.torrent}} rel="nofollow" title="Download Torrent" class="btn btn-primary"><span class="icon-in">
+                  </span>Torrent</a> 
+                   
+
+			</div>
+        </div>
+
+    </div>
+
+  
+  
+  
+</div>
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="weatherApp">
+    <head>
+        <title>YTS Movies</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap and fontawesome via CDN -->
+        
+<!--        <link rel="stylesheet" href="./css/bootstrap.min.css" />-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            html, body, input, select, textarea
+            {
+                font-size: 1.05em !important;
+            }
+        </style>
+        
+        <!-- load angular via CDN -->
+        <script src="//code.angularjs.org/1.3.1/angular.min.js"></script>
+        <script src="//code.angularjs.org/1.3.1/angular-route.min.js"></script>
+        <script src="//code.angularjs.org/1.3.1/angular-resource.min.js"></script>
+        <script src="app.js"></script>
+        <script src="routes.js"></script>
+        <script src="controllers.js"></script>
+
+    </head>
+    <body>
+        
+        <header class="masthead mb-auto">
+        <div class="inner">
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="http://YTS.ag" target="_blank">YTS</a>
+            <a class="nav-link" href="http://imdb.com" target="_blank">IMDB</a>
+          </nav>
+        </div>
+      </header>
+        
+
+        
+        <div class="container">
+
+            <div ng-view></div>
+
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        
+        <small class="d-block mb-3 text-muted">&copy; 2019</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Links</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="http://YTS.ag" target="_blank">YTS</a></li>
+          <li><a class="text-muted" href="http://imdb.com" target="_blank">IMDB</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        
+      </div>
+      
+      
+    </div>
+  </footer>
+		</div>
+        
+        
+        
+
+    </body>
+</html>
